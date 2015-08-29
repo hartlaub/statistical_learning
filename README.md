@@ -1,2 +1,2 @@
 # Statistical Learning
-R scripts implementing methods from The Elements of Statistical Learning by Friedman, Hastie, and Tibshirani.
+This repository contains R scripts that implement methods from [The Elements of Statistical Learning](http://statweb.stanford.edu/~tibs/ElemStatLearn/) by Friedman, Hastie, and Tibshirani.

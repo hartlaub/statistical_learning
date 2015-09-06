@@ -3,4 +3,4 @@ This repository contains R scripts that implement methods from [The Elements of 
 
 The `Exercises` folder contains scripts that implement solutions to select problems in ESL.
 
-The `Implementations` folder contains scripts that document the general implementation of various learning methods from ESL. Each script describes the usage of two implementations: a *homemade* implementation that was originally coded, and an *official* implementation (i.e. contained in a package from CRAN). 
+The `Implementations` folder contains scripts that document the general implementation of various learning methods from ESL. Each script describes the usage of two implementations: a *homemade* implementation that was originally coded, and an *official* implementation (i.e. contained in a package from [CRAN](https://cran.r-project.org/)). 

@@ -38,7 +38,7 @@ distance <- function(a, b) {
   # Returns:
   #   ||a - b||
   
-  return(sqrt(sum((a - b)^2)))
+  return(sqrt(sum((a - b) ^ 2)))
   
 }
 
@@ -75,8 +75,8 @@ training$V1 <- as.numeric(training$V1)
 test <- read.table("zip.test.csv", sep = " ")
 test <- test[test$V1 == 2 | test$V1 == 3, ]
 
-class1 <- KNN(training, test[, 2:ncol(test)], 15)
-x <- knn(training[, 2:ncol(training)], test[, 2:ncol(test)], training$V1, 15)
+class1 <- KNN(training, test[, 2:ncol(test)], 6)
+x <- knn(training[, 2:ncol(training)], test[, 2:ncol(test)], training$V1, 6)
 class1$class == x
 
 linclass <- lm(V1 ~ ., data = training)

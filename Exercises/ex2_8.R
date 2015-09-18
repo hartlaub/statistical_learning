@@ -202,27 +202,6 @@ sum(x == test[,1]) / length(x)
 table(x == test_new$classify)
 
 #############
-### k = 6 ###  % accuracy
-#############
-
-### test_new stores test data with 0/1 classification of test data
-### in 'classify' column, using my Knn function with k = 6.
-test_new <- Knn(training, test, 6)
-
-### Outputs percentage of correctly classified test data.
-sum(test_new$classify == test[,1]) / length(test_new$classify)
-
-### x stores vector with 0/1 classification of test data
-### using R's knn function with k = 6.
-require(class)
-x <- knn(training[,2:ncol(training)], test[,2:ncol(test)], training[,1], k=6)
-sum(x == test[,1]) / length(x)
-
-### Compares classifcations in x (from R's knn function) to
-### classifications in test_new$classify (from my Knn function)
-table(x == test_new$classify)
-
-#############
 ### k = 7 ### 96.70 % accuracy
 #############
 
